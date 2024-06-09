@@ -3,7 +3,7 @@ import { adminBlogsFail, adminBlogsRequest, adminBlogsSuccess, blogsFail, blogsR
 import { myBlogsFail, myBlogsRequest, myBlogsSuccess } from '../slices/MyBlogsSlice';
 
 
-export const getBlogs = (id,keyword) => async (dispatch) => {
+export const getBlogs = (keyword) => async (dispatch) => {
 
     let link ='/api/sh/blog'
     if(keyword){
